@@ -7,10 +7,12 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
-    <div class="container-fluid header_row">   
+    
+    <div class="container-fluid header_row">
         <div class="container">
             <div class="row logo">
                 <div class="col-md-2">
@@ -19,7 +21,6 @@
                 <div class="col-md-7">
                     <div class="search_container">
                         <input type="search" class="search_text" placeholder="Tìm tên vắc xin,...">
-
                         <button type="submit" class="search_button">
                             <img src="Group 1000004252.svg" alt="Search">
                         </button>
@@ -28,9 +29,9 @@
                 <div class="col-md-1">
                     <div class="login">
                         <img class="icon_cart" src="cart.svg">
-                        <a class="login_text" href="###">Đăng nhập</a>  
+                        <a class="login_text" href="###">Đăng nhập</a>
                     </div>
-                </div>     
+                </div>
                 <div class="col-md-2">
                     <div class="cart">
                         <img class="icon_cart" src="cart.svg">
@@ -38,15 +39,20 @@
                     </div>
                 </div>
             </div>
-            <div class="row navbar">
+            <button class="menu_toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="row navbar" id="mobileNavbar">
                 <div class="col-md-9">
                     <div class="navbar_nav">
                         <a class="nav_text" href="##">Trang chủ</a>
                         <select class="make_an_appointment">
                             <option>Đặt lịch khám</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
+                            <option>Khám bệnh A</option>
+                            <option>Khám bệnh B</option>
+                            <option>Khám bệnh C</option>
                         </select>
                         <a class="nav_text" href="##">Hỏi đáp bác sĩ</a>
                         <a class="nav_text" href="##">Hồ sơ sức khoẻ</a>
@@ -56,9 +62,9 @@
                     </div>
                 </div>
                 <div class="col-md-3"></div>
-            </div>
+            </div> 
             <!-- đưa ra ngoài thẻ .container -->
-            <div class="container-fluid p-0">
+            <div class=" banner container-fluid p-0">
                 <div class="row">
                     <img src="image 277 1.png">
                 </div>
@@ -125,10 +131,10 @@
 
             </div>
             <div class="row image_intro">
-                <div class="col-md-3"><img src="Group 1000004269.png"></div>
-                <div class="col-md-3"><img src="Group 1000004270.png"></div>
-                <div class="col-md-3"><img src="Group 1000004271.png"></div>
-                <div class="col-md-3"><img src="Group 1000004272.png"></div>
+                <div class="col-12 col-sm-6 col-md-3"><img src="Group 1000004269.png"></div>
+                <div class="col-12 col-sm-6 col-md-3"><img src="Group 1000004270.png"></div>
+                <div class="col-12 col-sm-6 col-md-3"><img src="Group 1000004271.png"></div>
+                <div class="col-12 col-sm-6 col-md-3"><img src="Group 1000004272.png"></div>
             </div>
 
             <div class="row mt-5 intro">
@@ -198,6 +204,10 @@
                 <div class="col-md-7 goiTreEm p-0">
                     <img src="Rectangle 11302.png" class="banner-main">
 
+
+
+
+
                     <div class="content-wrapper">
                         <h3 class="title-main">Gói trẻ em từ 0-2 tuổi</h3>
                         <p class="desc-main">Trẻ cần được tiêm vắc xin sớm và đúng lịch để có kháng thể bảo vệ trước khi
@@ -212,6 +222,14 @@
                             </div>
                         </div>
                     </div>
+
+
+
+
+
+
+
+
                     <div class="goiTreEmData">
                         <div class="container mt-5">
                             <div class="table-responsive">
@@ -425,7 +443,7 @@
                 </div>
                 <div class="col-md-3"></div>
             </div>
-            <div class="row">
+            <div class="row quyTrinhTomTat">
                 <div class="col-md-4">
                     <div class="card_quytrinh">
                         <div class="card_header">1. Trước khi tiêm</div>
@@ -515,15 +533,15 @@
                     <div class="select_box">
                         <select class="chosee_tinh w-100">
                             <option>Chọn tỉnh thành phố</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
+                            <option>Thành phố A</option>
+                            <option>Thành phố B</option>
+                            <option>Thành phố C</option>
                         </select>
                         <select class="chosee_quan w-100">
                             <option>Chọn quận huyện</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
+                            <option>Huyện A</option>
+                            <option>Huyện B</option>
+                            <option>Huyện C</option>
                         </select>
                     </div>
                     <div class="count_tinh">
@@ -652,7 +670,8 @@
                                 </div>
                                 <div class="ten_namsinh">
                                     <input type="text" placeholder="Nhập họ và tên">
-                                    <input type="date" placeholder="Ngày sinh">
+                                    <!-- custom 1 cái input -->
+                                    <input type="date" placeholder="Ngày sinh" allowCl;>
                                 </div>
                                 <div class="ten_namsinh">
                                     <input type="text" placeholder="Nhập số điện thoại">
@@ -679,13 +698,15 @@
                                 <div class="location-selects">
                                     <select>
                                         <option>Chọn Tỉnh/Thành phố</option>
-                                        <option>Chọn Tỉnh/Thành phố</option>
-                                        <option>Chọn Tỉnh/Thành phố</option>
+                                        <option>Tỉnh A</option>
+                                        <option>Tỉnh B</option>
+                                        <option>Tỉnh C</option>
                                     </select>
                                     <select>
-                                        <option>Chọn quận/huyện</option>
-                                        <option>Chọn quận/huyện</option>
-                                        <option>Chọn quận/huyện</option>
+                                        <option>Chọn Quận/Huyện</option>
+                                        <option>Quận 1</option>
+                                        <option>Quận 2</option>
+                                        <option>Quận 3</option>
                                     </select>
                                 </div>
                             </div>
@@ -812,14 +833,14 @@
                                 <div class="tiem_chung_inputs">
                                     <select>
                                         <option>Chọn vắc xin phòng bệnh ( không bắt buộc )</option>
-                                        <option>Chọn vắc xin phòng bệnh ( không bắt buộc )</option>
-                                        <option>Chọn vắc xin phòng bệnh ( không bắt buộc )</option>
+                                        <option>Vắc xin 1</option>
+                                        <option>Vắc xin 2</option>
                                     </select>
                                     <input type="date" placeholder="Chọn ngày hẹn tiêm">
                                     <select>
                                         <option>Chọn khung giờ</option>
-                                        <option>Chọn khung giờ</option>
-                                        <option>Chọn khung giờ</option>
+                                        <option>1h00-2h00</option>
+                                        <option>4h00-6h00</option>
                                     </select>
                                 </div>
                             </div>
@@ -839,7 +860,7 @@
 
 
         <div class="container">
-            <div class="row">
+            <div class="row thongTinTinTuc">
                 <div class="col-md-3"></div>
                 <div class="col-md-6">
                     <h3 class="thongtin">Thông tin về trung tâm tiêm chủng</h3>
@@ -947,7 +968,7 @@
             </div>
             <div class="container py-5">
                 <div class="row g-4">
-                    <div class="col-lg-3 col-md-6">
+                    <div class="col-lg-3 col-md-6 thongTinLienHeFooter">
                         <div class="footer-brand ms-4">
                             <img src="Group 1000001864.png" alt="Medivax" class="mb-3" style="height: 40px;">
                         </div>
@@ -982,7 +1003,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-3 col-md-6">
+                    <div class="col-lg-3 col-md-6 goiKhamFooter">
                         <h5 class="footer-heading">GÓI KHÁM SỨC KHỎE</h5>
                         <ul class="footer-nav">
                             <li><a href="#">Trang chủ</a></li>
@@ -993,7 +1014,7 @@
                         </ul>
                     </div>
 
-                    <div class="col-lg-2 col-md-6">
+                    <div class="col-lg-2 col-md-6 hoTroKhachHangFooter">
                         <h5 class="footer-heading">HỖ TRỢ KHÁCH HÀNG</h5>
                         <ul class="footer-nav">
                             <li><a href="#">Khám bệnh mũi xoang</a></li>
@@ -1005,7 +1026,6 @@
 
                     <div class="col-lg-4 col-md-6">
                         <div class="working-hours-card">
-
                             <div class="card-badge">
                                 <img src="glv.svg" class="badge-bg" alt="Nền">
                                 <img src="glv2.svg" class="badge-icon" alt="Icon">
@@ -1035,6 +1055,22 @@
 
 
     </div>
+    <script>
+        const menuToggle = document.getElementById('menuToggle');
+        const mobileNavbar = document.getElementById('mobileNavbar');
+
+        menuToggle.addEventListener('click', () => {
+            mobileNavbar.classList.toggle('active');
+        });
+
+        // Tùy chọn: Đóng menu khi nhấn vào một link bất kỳ
+        const navLinks = document.querySelectorAll('.nav_text');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileNavbar.classList.remove('active');
+            });
+        });
+    </script>
 </body>
 
 </html>
