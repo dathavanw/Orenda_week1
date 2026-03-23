@@ -63,12 +63,13 @@
 }
 
 .icon_cart {
-
     top: 12px;
     opacity: 1;
 }
 
-
+.login{
+    margin-left: 20px;
+}
 .login,
 .cart {
     display: flex;
@@ -89,11 +90,13 @@
     /* Bo tròn hoàn toàn 2 đầu */
     padding: 0 25px;
     /* Khoảng cách 2 đầu nút */
+    margin-left: 20px;
     text-wrap: nowrap;
     /* Không cho chữ xuống dòng */
 }
 
 .login_text {
+    font-family: 'Inter', sans-serif;
     top: 12px;
     white-space: nowrap;
     font-weight: 600;
@@ -108,14 +111,17 @@
 
 
 .cart_text {
+    font-family: 'Inter', sans-serif;
     top: 12px;
-    font-weight: 600px;
+    white-space: nowrap;
+    font-weight: 600;
     font-style: Medium;
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 0%;
     text-decoration: none;
     color: #FFFFFF;
+
 }
 
 .navbar {
@@ -129,17 +135,15 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* Căn giữa các mục theo chiều dọc */
     height: 60px;
     width: 100%;
-    /* Luôn chiếm hết 9 cột (col-md-9) */
 }
 
 .nav_text,
 .make_an_appointment {
     font-family: 'Inter', sans-serif;
-    /* Đảm bảo dùng đúng font của Figma */
     font-weight: 500;
+    font-style: Medium;
     font-size: 16px;
     line-height: 24px;
     text-decoration: none;
@@ -147,17 +151,13 @@
     background: none;
     border: none;
     white-space: nowrap;
-    /* Ngăn chữ bị nhảy xuống hàng */
     padding: 0 10px;
-    /* Tạo khoảng chạm cho người dùng dễ bấm */
     transition: color 0.3s;
 }
 
 .make_an_appointment:focus {
     outline: none;
 }
-
-
 
 .horizontal-gallery {
     display: flex;
@@ -190,12 +190,18 @@
 }
 
 .caption {
+    font-family: Inter, sans-serif;
     display: block;
-    font-size: 14px;
-    line-height: 1.2;
-    color: #333;
+    font-size: 16px;
+    line-height: 24px;
+    color: #3580DB;
     word-wrap: break-word;
     text-decoration: none;
+
+    font-weight: 600;
+    /* Đại diện cho Semi Bold */
+    font-style: normal;
+    /* Đảm bảo chữ đứng thẳng */
 }
 
 .vector1 {
@@ -212,21 +218,34 @@
 }
 
 .text_1 {
+    font-family: 'Inter', sans-serif;
     font-weight: 400;
+    /* 400 tương đương với Regular */
     font-style: normal;
+    /* Thay vì ghi 'Regular', CSS dùng 'normal' */
     font-size: 32px;
     line-height: 48px;
+    /* Khoảng cách dòng rất thoáng (gấp 1.5 lần size) */
     letter-spacing: 0;
+    /* Không điều chỉnh khoảng cách chữ */
     text-align: center;
+    /* Căn giữa nội dung */
 }
 
 .text_2 {
+    font-family: 'Inter', sans-serif;
     font-weight: 400;
+    /* 400 là giá trị số của Regular */
     font-style: normal;
+    /* Trong CSS không dùng chữ 'Regular', dùng 'normal' */
     font-size: 16px;
+    /* Kích thước chữ tiêu chuẩn cho web */
     line-height: 24px;
+    /* Khoảng cách dòng lý tưởng (1.5x) */
     letter-spacing: 0;
+    /* Giữ khoảng cách chữ mặc định */
     text-align: center;
+    /* Căn giữa văn bản */
 }
 
 .text_3 {
@@ -239,18 +258,40 @@
 }
 
 .image_intro {
+    margin: 30px;
+    /* Áp dụng 30px cho cả 4 phía */
     margin-top: 25px;
 }
 
 .intro {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.intro h2 {
+    margin-top: 16px;
+    font-family: Inter sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 32px;
+    line-height: 48px;
+    letter-spacing: 0%;
     text-align: center;
 }
 
 .tiem {
     margin-top: 16px;
+    font-family: Inter sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: center;
 }
 
 .card_info {
+    padding-top: 56px;
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -259,7 +300,6 @@
 .card_1 {
     display: flex;
     align-items: center;
-    padding: 12px 16px;
     width: 407px;
     height: 94px;
     border-width: 1px;
@@ -288,10 +328,7 @@
 .card_7 {
     display: flex;
     align-items: center;
-    padding: 12px 16px;
     background: #E5F3FE;
-    top: 124px;
-    opacity: 1;
     border-width: 1px;
     border-radius: 12px;
 }
@@ -299,63 +336,69 @@
 .goiTreEm p {
     font-family: Inter;
     font-weight: 600;
-    font-style: Semi Bold;
+    font-style: normal;
     font-size: 20px;
     line-height: 24px;
     letter-spacing: 0%;
+}
+
+.anh {
+    margin-left: 20px;
 }
 
 .goiTreEm {
     border: 1px solid #E0E0E0;
     border-radius: 12px;
     overflow: hidden;
-    padding: 0;
     background: #fff;
-
+    margin-top: 56px !important;
+    padding: 0px !important;
+    width: 713px !important;
 }
 
 .banner-main {
-    width: 100%;
-    height: auto;
-    display: block;
+    width: 713;
+    height: 150;
+    border-width: 1px;
+    opacity: 1;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
 }
 
 .content-wrapper {
-    padding: 20px;
+    margin-top: 11px !important;
+    padding-left: 16px;
+    padding-right: 16px;
+
 }
 
 .title-main {
-    font-weight: 700;
-    font-size: 24px;
-    margin-bottom: 10px;
-    color: #000;
+    font-family: Inter sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    margin-top: 16px;
 }
 
 .desc-main {
-    color: #3580DB;
-    line-height: 20px;
-    margin-bottom: 20px;
-    font-family: Inter;
+    font-family: Inter sans-serif;
     font-weight: 400;
-    font-style: Regular;
+    font-style: normal;
     font-size: 14px;
     line-height: 20px;
     letter-spacing: 0%;
+    color: #3580DB;
 
 }
-
-
-
-
-
-
 
 
 /* Thẻ màu xanh nhạt */
 .price-card {
-    background-color: #E3F2FD;
+    background: #E5F3FE;
     border-radius: 8px;
-    padding: 15px 20px;
+    padding-left: 16px;
     display: flex;
     justify-content: space-between;
     /* Đẩy tiêu đề sang trái, giá sang phải */
@@ -363,49 +406,79 @@
 }
 
 .price-title {
-    color: #3580DB;
+    font-family: Inter sans-serif;
     font-weight: 600;
-    font-size: 16px;
-    margin: 0;
+    font-style: normal;
+    font-size: 15px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    color: #316EC9;
+    margin-left: 12px;
+    margin-top: 19px;
+    margin-bottom: 19px;
     flex: 1;
     /* Để tiêu đề chiếm không gian bên trái */
 }
 
 .price-info {
     text-align: right;
+    width: 167;
+    height: 46;
+    opacity: 1;
+    margin-right: 12px;
+    margin-top: 8px;
+    margin-bottom: 8px;
 }
 
 .old-price {
-    font-size: 14px;
+    font-size: 12px;
     color: #9E9E9E;
     text-decoration: line-through;
-    margin-bottom: 5px;
+    /* margin-bottom: 34px; */
+    margin-right: 4px;
 }
 
 .new-price {
-    font-size: 18px;
-    color: #D32F2F;
-    font-weight: 700;
+    color: #D82B48;
     text-decoration: none;
-    margin-left: 10px;
-    display: inline-block; 
+    margin-right: 12px;
+    display: inline-block;
     text-decoration: none !important;
+    font-family: Inter sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0%;
+
 }
 
 /* Badge Tiết kiệm màu đỏ */
 .save-badge {
-    background-color: #EF5350;
+    background-color: #EE423C;
     color: white;
-    padding: 4px 12px;
+    margin-top: 2px;
+    margin-right: 12px;
     border-radius: 4px;
     font-size: 14px;
     display: inline-block;
     position: relative;
+    padding-top: 2px;
+    padding-right: 8px;
+    padding-bottom: 2px;
+    padding-left: 14px;
 }
 
 
+.card_treem p {
+    margin-left: 20px;
+}
 
-
+.Arrow {
+    margin-right: 16px;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
 
 
 
@@ -450,35 +523,51 @@
 .goiTreEmData thead.table-primary th {
     background-color: transparent !important;
     /* Loại bỏ màu nền mặc định của Bootstrap */
-    color: #333;
-    font-weight: 700;
-    padding: 15px;
-    border-bottom: 2px solid #f0f0f0;
-    border-top: none;
+    color: #020B27;
+    font-family: Inter sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 15px;
+    line-height: 24px;
+    letter-spacing: 0%;
+}
+
+.goiTreEmData table td,
+.goiTreEmData table th {
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+.goiTreEmData table td {
+    padding-bottom: 14px;
 }
 
 /* Các ô nội dung */
 .goiTreEmData tbody td {
-    padding: 18px 15px;
     border-bottom: 1px solid #f0f0f0;
-    vertical-align: middle;
-    color: #444;
+    margin-bottom: 14px;
+    color: #020B27;
+    padding-bottom: 14px;
+    font-family: Inter sans-serif;
+    font-weight: 500;
+    font-style: normal;
     font-size: 15px;
+    line-height: 24px;
+    letter-spacing: 0%;
 }
 
 /* Tạo dấu chấm tròn cho cột đầu tiên (Phòng bệnh) */
 .goiTreEmData tbody td:first-child {
     position: relative;
-    padding-left: 30px;
+    padding-left: 23px;
     /* Tạo khoảng trống cho dấu chấm */
 }
 
 .goiTreEmData tbody td:first-child::before {
     content: "";
     position: absolute;
-    left: 15px;
-    top: 50%;
-    transform: translateY(-50%);
+    left: 8px;
+    top: 16px;
     width: 6px;
     height: 6px;
     background-color: #333;
@@ -496,7 +585,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 12px;
+    gap: 16px;
+    margin-top: 20px;
 }
 
 .btn-page {
@@ -511,6 +601,18 @@
     cursor: pointer;
     transition: all 0.2s ease;
     color: #666;
+}
+
+.btn-page_1 {
+    width: 40px;
+    height: 40px;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border: none;
 }
 
 /* Trạng thái trang đang hoạt động (số 1) */
@@ -563,6 +665,16 @@
 }
 
 
+.btn-medical span {
+    font-family: 'SF Pro Display', 'Inter', -apple-system, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+
+}
 
 
 
@@ -610,8 +722,8 @@
     opacity: 1;
     border-radius: 44px;
 
-    color: #3580DB;
-    ;
+    color: #E5F3FE;
+
     border: none;
     font-weight: 600px;
     font-size: 15px;
@@ -620,12 +732,40 @@
     box-shadow: 0 4px 6px rgba(60, 161, 251, 0.2);
 }
 
-
-
-
 .bangGia {
     text-align: center;
+    margin-top: 70px;
+
 }
+
+.bangGia p {
+    text-align: center;
+    margin-top: 16px;
+    font-family: Inter sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: center;
+
+}
+
+.bangGia h3 {
+    font-family: Inter sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 32px;
+    line-height: 48px;
+    letter-spacing: 0%;
+    text-align: center;
+
+}
+
+
+
+
+
 
 .BangGia {
     margin-left: auto;
@@ -635,46 +775,34 @@
 
 .text_title_quy_trinh {
     margin-top: 70px;
-    left: 390px;
-    opacity: 1;
+    font-family: Inter sans-serif;
     font-weight: 600;
-    font-style: Semi Bold;
+    font-style: normal;
     font-size: 32px;
     line-height: 48px;
     letter-spacing: 0%;
     text-align: center;
 }
 
-/* .card_header {
-    padding: 15px;
-    color: white;
-    font-weight: bold;
-    background: #3580DB;
-}
 
-.card_process {
-    padding: 15px;
-    color: white;
-    font-weight: bold;
-    background: #F68E28;
-}
-
-.card_process_2 {
-    padding: 15px;
-    color: white;
-    font-weight: bold;
-    background: #0CA575;
-} */
 
 /* Header chung */
 .card_header,
 .card_process,
 .card_process_2 {
-    padding: 15px 20px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
+    font-family: Inter sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: center;
+    padding-left: 20px;
+    padding-top: 12px;
+    padding-bottom: 12px;
     text-align: left;
+    color: #FFFFFF;
+    ;
 }
 
 /* Màu Xanh Dương - Bước 1 */
@@ -684,17 +812,14 @@
 
 /* Màu Cam - Bước 2 */
 .card_process {
-    background-color: #F69232;
+    background-color: #F68E28;
 }
 
 /* Màu Xanh Lá - Bước 3 */
 .card_process_2 {
-    background-color: #18A66E;
+    background-color: #0CA575;
 }
 
-.card-body-quytrinh {
-    padding: 20px;
-}
 
 .card_quytrinh {
     margin-top: 30px;
@@ -704,25 +829,25 @@
     overflow: hidden;
     /* Để header không bị tràn khỏi bo góc */
     height: 100%;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    width: 360px;
 }
 
 /* Từng dòng item (Icon + Text) */
 .row-item {
     display: flex;
     align-items: flex-start;
-    margin-bottom: 25px;
-    gap: 15px;
+    padding: 20px;
 }
 
 .row-item:last-child {
     margin-bottom: 0;
 }
 
-/* Icon tròn phía sau ảnh SVG */
+
+
 .icon {
-    width: 45px;
-    height: 45px;
+    width: 48px;
+    height: 48px;
     min-width: 45px;
     /* Giữ kích thước không bị co lại */
     border-radius: 50%;
@@ -745,64 +870,41 @@
 }
 
 .icon img {
-    width: 24px;
-    height: 24px;
+    width: 48px;
+    height: 48px;
 }
 
 /* Phần chữ */
 .text strong {
-    display: block;
+    font-family: Inter sans-serif;
+    font-weight: 600;
+    font-style: normal;
     font-size: 16px;
-    color: #333;
-    margin-bottom: 5px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    padding-left: 12px;
+
 }
 
 .text p {
+    font-family: Inter sans-serif;
+    font-weight: 400;
+    font-style: normal;
     font-size: 14px;
-    color: #666;
-    margin: 0;
-    line-height: 1.5;
+    line-height: 20px;
+    padding-left: 12px;
+    letter-spacing: 0%;
+
 }
-
-/* .card_quytrinh {
-    height: 358px !important;
-    min-height: 358px;
-    max-height: 358px;
-
-    display: flex;
-    flex-direction: column;
-}
-
-.row-item {
-    display: flex;
-    align-items: flex-start;
-    gap: 15px;
-    width: 100%;
-}
-
-.card-body-quytrinh {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    justify-content: start;
-    align-items: center;
-}
-
-.card_quytrinh {
-    border-radius: 12px;
-    overflow: hidden;
-    height: 358px;
-    border-width: 1px;
-
-} */
 
 /* Khung bao ngoài cùng */
 .center-selection-container {
     border: 1px solid #e0e0e0;
     border-radius: 8px;
     background: #fff;
-    padding: 10px;
+    padding: 16px;
     max-width: 600px;
+    margin-top: 20px;
 }
 
 .anhtoanha {
@@ -814,11 +916,11 @@
 /* Từng dòng trung tâm */
 .center-item {
     display: flex;
-    padding: 20px;
+    margin-bottom: 16px;
+    margin-right: 4px;
     border-bottom: 1px solid #eee;
     cursor: pointer;
     position: relative;
-    transition: background 0.2s;
 }
 
 .center-item:hover {
@@ -908,14 +1010,24 @@
 
 .diadiem {
     margin-top: 70px;
-    left: 390px;
-    opacity: 1;
-    font-weight: 600px;
+    letter-spacing: 0%;
+    text-align: center;
+    font-family: Inter sans-serif;
+    font-weight: 600;
     font-style: Semi Bold;
     font-size: 32px;
     line-height: 48px;
     letter-spacing: 0%;
     text-align: center;
+}
+
+.vidu {
+    font-family: Inter sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
 }
 
 .anhdiadiem {
@@ -932,22 +1044,58 @@
 }
 
 .chuoi_text {
-    padding: 0 20px;
+    margin-left: 20px;
     display: flex;
     flex-direction: column;
     gap: 10px;
     margin-top: 14px;
+
+
+
 }
+
+.chuoi_text strong {
+    font-family: Inter sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0%;
+
+}
+
 
 .chuoi_text p {
     margin: 0;
+    font-family: Inter sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0%;
 }
 
 .xemDuong {
-    padding: 0 20px;
+    margin-left: 20px;
     margin-top: 30px;
     display: flex;
-    gap: 30px;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.xemDuong span {
+    font-weight: 500;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: justify;
+    vertical-align: middle;
+
+}
+
+.goituvan {
+    color: #3580DB;
 }
 
 .text-blue {
@@ -973,36 +1121,26 @@
 }
 
 .select_box {
-    /* display: flex;
-    gap: 15px;
-    align-items: center; */
     display: flex;
-    /* Kích hoạt Flexbox */
     gap: 15px;
-    /* Khoảng cách giữa 2 ô Select */
-    /* margin-bottom: 10px; */
     margin-right: 30px;
 }
 
 .text_tinh {
-    margin-top: 16px;
-    font-family: Inter;
-    font-weight: 500px;
+    font-family: Inter sans-serif;
+    margin-top: 15px;
+    font-weight: 500;
     font-style: Medium;
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 0%;
-    color: #000;
 }
-
-
 
 .position-relative {
     position: relative;
-    height: 1548px;
+    height: 1798px;
 }
 
-/* Lớp này giúp nội dung bay lên trên và phủ toàn bộ diện tích ảnh */
 .form-abs-overlay {
     position: absolute;
     top: 0;
@@ -1027,19 +1165,34 @@
 
 /* Định dạng dòng tiêu đề chính */
 .form-title {
-    font-size: 32px;
-    font-weight: 700;
     color: #000000;
     margin-bottom: 8px;
+    margin-top: 50px;
+    font-family: Inter sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 32px;
+    line-height: 48px;
+    letter-spacing: 0%;
+    text-align: center;
+
 }
 
 /* Định dạng dòng mô tả phụ */
 .form-subtitle {
-    font-size: 16px;
-    color: #6c757d;
-    /* Màu xám */
+    color: #4B5563;
     font-style: normal;
+    font-family: Inter sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: center;
+    margin-top: 16px;
 }
+
+
 
 /* Đảm bảo overlay sắp xếp các thành phần theo chiều dọc */
 .form-abs-overlay {
@@ -1078,10 +1231,34 @@
 .thongTinNguoiDangKy p,
 .chonTrungTam,
 .thongTinTiemChung {
-    margin: 0;
-    font-weight: 600;
-    color: #333;
-    font-size: 16px;
+    font-family: Inter sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: center;
+
+}
+
+.thongTinTiemChung {
+    margin-top: 30px;
+}
+
+.chonTrungTam img {
+    margin-top: 30px;
+
+}
+
+.chontrungtamtiemchung {
+    font-family: Inter sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: center;
+    margin-top: 30px;
 }
 
 /* Container bọc các ô input */
@@ -1092,6 +1269,7 @@
     /* Khoảng cách giữa các ô */
     margin-bottom: 30px;
     /* Khoảng cách với nút Đăng ký phía dưới */
+    margin-top: 16px;
 }
 
 /* Kiểu dáng chung cho select và input date */
@@ -1148,11 +1326,21 @@
     height: 20px;
 }
 
+.thongtinvetrungtamtiemchung {
+    margin-top: 60px;
+    font-family: Inter sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 32px;
+    line-height: 48px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
 .ten_namsinh {
     display: flex;
 }
 
-/* Áp dụng cho phần Thông tin người đăng ký và Thông tin tiêm chủng */
 .ten_namsinh,
 .tiem_chung_inputs {
     display: flex;
@@ -1269,6 +1457,7 @@
     gap: 20px;
     /* Khoảng cách giữa 2 ô Select */
     margin-bottom: 10px;
+    margin-top: 16px;
 }
 
 .location-selects select {
@@ -1286,9 +1475,19 @@
 
 /* Ô select thứ 2 có nền xám nhạt như ảnh */
 .location-selects select:last-child {
-    background-color: #e9ecef;
+    background-color: #C1C8D1;
 }
 
+.cotamsautrungtam {
+    font-family: Inter sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    color: #020B27;
+    margin-top: 16px;
+}
 
 
 .btn-chiDuong {
@@ -1318,9 +1517,9 @@
     align-items: center;
     justify-content: center;
     gap: 10px;
+    margin-top: 30px;
     padding: 15px 20px;
-    /* Tăng padding trên dưới một chút cho giống ảnh mẫu */
-    background-color: #3CA1FB;
+    background-color: #3580DB;
     border-radius: 44px;
     color: white;
     border: none;
@@ -1367,16 +1566,22 @@
 }
 
 .center-name {
-    font-size: 15px;
-    font-weight: 700;
-    color: #333;
-    margin-bottom: 5px;
+    font-family: Inter sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
 }
 
 .center-address {
-    font-size: 13px;
-    color: #666;
-    margin-bottom: 8px;
+    font-family: Inter sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0%;
+    color: #4B5563;
 }
 
 
@@ -1386,6 +1591,16 @@
     gap: 8px;
 }
 
+.XEMTHEM {
+    font-family: Inter sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+
+}
+
 .status-open {
     color: #3580DB;
     /* Màu xanh cho "Đang mở" */
@@ -1393,7 +1608,13 @@
 }
 
 .status-time {
-    color: #888;
+    font-family: Inter sans-serif;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0%;
+    color: #4B5563;
 }
 
 
@@ -1423,6 +1644,7 @@
 }
 
 .price-list-wrapper {
+    margin-top: 30px;
     background-color: #ffffff;
     border: 1px solid #e2e8f0;
     /* Đường viền xám nhạt */
@@ -1441,25 +1663,39 @@
 
 /* 2. Style cho Header (Dòng tiêu đề xanh) */
 .custom-table-price thead th {
-    background-color: #3182ce;
+    background-color: #3580DB;
     color: white;
     font-weight: 600;
-    padding: 15px;
     border: 1px solid #2b6cb0;
     text-align: center;
     text-transform: none;
+    height: 50px;
+    font-family: Inter sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: center;
 }
 
-/* 3. Style cho Body (Các ô dữ liệu) */
 .custom-table-price tbody td {
-    padding: 12px 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     border: 1px solid #e2e8f0;
-    color: #2d3748;
+    color: #020B27;
     font-size: 14px;
     line-height: 1.5;
     text-align: center;
     vertical-align: middle;
     /* Căn giữa nội dung khi gộp hàng (rowspan) */
+    font-family: Inter sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: center;
+
 }
 
 .custom-table-price tbody tr.bg-gray {
@@ -1525,43 +1761,57 @@
 
 /* Phần Tiêu đề */
 .news-title {
-    font-size: 22px;
+    font-size: 16px;
     /* Kích thước tiêu đề */
     font-weight: bold;
     color: #002d5d;
     /* Màu xanh đậm đặc trưng */
-    line-height: 1.4;
+    line-height: 24px;
     /* Khoảng cách dòng */
     margin-top: 0;
 }
 
-/* Phần Mô tả ngắn */
+.news-titl_1 {
+    font-family: Inter sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0%;
+
+}
+
 .news-excerpt {
     font-size: 15px;
     color: #495057;
     /* Màu xám đậm của chữ mô tả */
     line-height: 1.6;
     margin-top: 0;
-    margin-bottom: 25px;
+    margin-bottom: 24px;
     /* Khoảng cách với nút bấm */
+
+    font-family: Inter sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: 0%;
+
 }
 
 /* Nút Xem thêm */
 .btn-more {
-    background-color: #3CA1FB;
+    background-color: #3580DB;
     /* Màu xanh dương của nút */
     color: #ffffff;
     border: none;
     padding: 12px 30px;
     border-radius: 50px;
     /* Bo tròn pill */
-    font-size: 15px;
-    font-weight: 500;
+    font-size: 16px;
+    font-weight: 600;
     cursor: pointer;
 }
-
-
-
 
 /* --- Container chính của danh sách tin phụ --- */
 .side-news-container {
@@ -1686,13 +1936,13 @@
     background-color: #3580DB;
     color: white;
     position: relative;
+    margin-top: 60px;
 }
 
 /* Tiêu đề các cột có gạch chân nhẹ */
 .footer-heading {
     font-size: 1.1rem;
     font-weight: 700;
-    margin-bottom: 30px;
     padding-bottom: 10px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     display: inline-block;
@@ -1705,14 +1955,12 @@
 }
 
 .footer-nav li {
-    margin-bottom: 12px;
+    margin-top: 12px;
 }
 
 .footer-nav li a {
     color: white;
     text-decoration: none;
-    transition: 0.3s;
-    font-size: 0.95rem;
 }
 
 .footer-nav li a::before {
@@ -1780,9 +2028,18 @@
 .hour-row {
     display: flex;
     justify-content: space-between;
-    padding: 8px 0;
+    margin-left: 16px;
+    margin-right: 16px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     font-size: 0.9rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    padding: 8px;
+    line-height: 20px;
+    letter-spacing: 0%;
+
 }
 
 .hour-row.special {
@@ -1849,9 +2106,9 @@
     align-items: center;
     gap: 16px;
     position: absolute;
-    bottom: 58px;
+    margin-top: 290px;
     /* Cách đáy footer 20px */
-    left: 30px;
+    margin-left: 30px;
     /* Cách lề phải footer 30px */
 }
 
@@ -1866,6 +2123,16 @@
     background-color: #FF5555;
     border: none;
     cursor: pointer;
+}
+
+.ms-3 {
+    font-family: Inter sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0%;
+
 }
 
 .footer-contact-list {
@@ -1889,6 +2156,26 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.footer-heading {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: 0;
+    text-transform: uppercase;
+
+}
+
+.footer_tt {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    line-height: 24px;
+    letter-spacing: 0;
 }
 
 /* 2. ẢNH NỀN (Ảnh 1): Làm gốc */
@@ -1958,7 +2245,7 @@
         font-size: 13px;
     }
 
-    .goiTreEm {
+    footer-nav .goiTreEm {
         margin-top: 40px !important;
     }
 
@@ -2073,17 +2360,32 @@
         width: 100%;
         /* Đẩy nút xuống dưới cùng và chiếm 100% để dễ bấm */
         justify-content: center;
-        margin-top: 10px;
-        padding: 8px;
+        margin-top: 16px;
+        padding: 10px;
+        background-color: #E5F3FE;
+        color: #3580DB;
     }
 
     .btn-chiDuong span {
-        font-size: 13px;
+        font-weight: 500;
+        font-style: normal;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0%;
+        vertical-align: middle;
+
+    }
+
+    .xemthemtrungtam {
+        margin-top: 16px;
+        color: Gray/900;
     }
 
     .anhtoanha {
-        margin-top: 20px;
+        transform: translateY(30px);
+
     }
+
 
     /* 1. Sắp xếp lại Container chính */
     .row.logo {
@@ -2134,6 +2436,7 @@
 
     .login_text,
     .cart_text {
+
         display: none !important;
         /* Ẩn chữ trên mobile cho gọn */
     }
@@ -2365,12 +2668,10 @@
         margin-top: 40px !important;
     }
 
-    .thongTinTinTuc{
+    .thongTinTinTuc {
         display: flex;
         margin-top: 50px;
     }
-
-
 }
 
 
@@ -2434,7 +2735,6 @@
         margin: 0 !important;
     }
 
-    /* Container bọc ngoài cùng */
     .card_treem {
         overflow: hidden;
         /* Đảm bảo không có gì tràn ra ngoài */
@@ -2448,11 +2748,13 @@
     .card_5 p,
     .card_6 p,
     .card_7 p {
-        word-wrap: break-word;
-        overflow-wrap: break-word;
-        white-space: normal;
-        margin: 10px 0;
-        padding: 0 10px;
+        font-family: Inter sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 18px;
+        line-height: 24px;
+
+        letter-spacing: 0%;
     }
 
 }
