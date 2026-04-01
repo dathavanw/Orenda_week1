@@ -50,8 +50,9 @@
     border-radius: 50%;
     display: flex;
     justify-content: center;
+
     align-items: center;
-    cursor: pointer;
+    cursor: poInter;
     padding: 0;
 }
 
@@ -67,9 +68,10 @@
     opacity: 1;
 }
 
-.login{
+.login {
     margin-left: 20px;
 }
+
 .login,
 .cart {
     display: flex;
@@ -190,7 +192,7 @@
 }
 
 .caption {
-    font-family: Inter, sans-serif;
+    font-family: 'Inter', sans-serif;
     display: block;
     font-size: 16px;
     line-height: 24px;
@@ -220,32 +222,22 @@
 .text_1 {
     font-family: 'Inter', sans-serif;
     font-weight: 400;
-    /* 400 tương đương với Regular */
     font-style: normal;
-    /* Thay vì ghi 'Regular', CSS dùng 'normal' */
     font-size: 32px;
     line-height: 48px;
-    /* Khoảng cách dòng rất thoáng (gấp 1.5 lần size) */
     letter-spacing: 0;
-    /* Không điều chỉnh khoảng cách chữ */
     text-align: center;
-    /* Căn giữa nội dung */
 }
 
 .text_2 {
     font-family: 'Inter', sans-serif;
     font-weight: 400;
-    /* 400 là giá trị số của Regular */
     font-style: normal;
-    /* Trong CSS không dùng chữ 'Regular', dùng 'normal' */
     font-size: 16px;
-    /* Kích thước chữ tiêu chuẩn cho web */
     line-height: 24px;
-    /* Khoảng cách dòng lý tưởng (1.5x) */
     letter-spacing: 0;
-    /* Giữ khoảng cách chữ mặc định */
     text-align: center;
-    /* Căn giữa văn bản */
+    color: #4B5563;
 }
 
 .text_3 {
@@ -255,10 +247,10 @@
     line-height: 30px;
     letter-spacing: 0;
     text-align: center;
+    color: #4B5563;
 }
 
 .image_intro {
-    margin: 30px;
     /* Áp dụng 30px cho cả 4 phía */
     margin-top: 25px;
 }
@@ -270,24 +262,28 @@
 
 .intro h2 {
     margin-top: 16px;
-    font-family: Inter sans-serif;
+    font-family: 'Inter' sans-serif;
     font-weight: 600;
     font-style: normal;
     font-size: 32px;
     line-height: 48px;
     letter-spacing: 0%;
     text-align: center;
+    color: #000000;
+
+
 }
 
 .tiem {
     margin-top: 16px;
-    font-family: Inter sans-serif;
+    font-family: 'Inter' sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 0%;
     text-align: center;
+    color: #4B5563;
 }
 
 .card_info {
@@ -305,8 +301,19 @@
     border-width: 1px;
     background: #3580DB;
     border-radius: 12px;
-    gap: 15px;
     width: 100%;
+}
+
+
+.textgoitreem {
+    font-family: 'Inter' sans-serif;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    color: #FFFFFF;
+    margin-top: 35px;
+    margin-bottom: 35px;
 }
 
 .Arrow {
@@ -317,7 +324,6 @@
     margin-left: 111px;
     font-size: 16px;
     font-weight: 500;
-    color: #2A50AA;
 }
 
 .card_2,
@@ -333,8 +339,26 @@
     border-radius: 12px;
 }
 
+.goitienhocduong,
+.goithanhthieunien,
+.goiphunu,
+.goinguoitruongthanh,
+.goinguoibenhmantinh,
+.goitienhonnha {
+    font-family: 'Inter' sans-serif;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    color: #2A50AA;
+    margin-left: 20px;
+    margin-top: 23px;
+}
+
+
+
 .goiTreEm p {
-    font-family: Inter;
+    font-family: 'Inter' sans-serif;
     font-weight: 600;
     font-style: normal;
     font-size: 20px;
@@ -344,6 +368,8 @@
 
 .anh {
     margin-left: 20px;
+    margin-top: 13px;
+    margin-bottom: 13px;
 }
 
 .goiTreEm {
@@ -353,14 +379,13 @@
     background: #fff;
     margin-top: 56px !important;
     padding: 0px !important;
-    width: 713px !important;
+
 }
 
 .banner-main {
-    width: 713;
-    height: 150;
+    height: 150px;
+    width: 100%;
     border-width: 1px;
-    opacity: 1;
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
 }
@@ -373,24 +398,23 @@
 }
 
 .title-main {
-    font-family: Inter sans-serif;
-    font-weight: 600;
+    font-family: 'Inter' sans-serif;
     font-style: normal;
     font-size: 20px;
     line-height: 24px;
     letter-spacing: 0%;
     margin-top: 16px;
+    color: #020B27;
+
 }
 
 .desc-main {
-    font-family: Inter sans-serif;
-    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px !important;
     font-style: normal;
-    font-size: 14px;
     line-height: 20px;
-    letter-spacing: 0%;
+    letter-spacing: 0;
     color: #3580DB;
-
 }
 
 
@@ -398,7 +422,6 @@
 .price-card {
     background: #E5F3FE;
     border-radius: 8px;
-    padding-left: 16px;
     display: flex;
     justify-content: space-between;
     /* Đẩy tiêu đề sang trái, giá sang phải */
@@ -406,7 +429,7 @@
 }
 
 .price-title {
-    font-family: Inter sans-serif;
+    font-family: 'Inter' sans-serif;
     font-weight: 600;
     font-style: normal;
     font-size: 15px;
@@ -435,16 +458,16 @@
     color: #9E9E9E;
     text-decoration: line-through;
     /* margin-bottom: 34px; */
-    margin-right: 4px;
+    margin-right: 8px;
 }
 
 .new-price {
     color: #D82B48;
     text-decoration: none;
-    margin-right: 12px;
+    margin-right: 4px;
     display: inline-block;
     text-decoration: none !important;
-    font-family: Inter sans-serif;
+    font-family: 'Inter' sans-serif;
     font-weight: 600;
     font-style: normal;
     font-size: 14px;
@@ -453,21 +476,40 @@
 
 }
 
-/* Badge Tiết kiệm màu đỏ */
+
+
+.giamgia {
+    display: flex;
+
+}
+
 .save-badge {
     background-color: #EE423C;
     color: white;
     margin-top: 2px;
     margin-right: 12px;
-    border-radius: 4px;
     font-size: 14px;
     display: inline-block;
     position: relative;
     padding-top: 2px;
     padding-right: 8px;
     padding-bottom: 2px;
-    padding-left: 14px;
+    padding-left: 9px;
 }
+
+
+
+.arrow-down {
+    margin-top: 3px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 26px 15px 0px 0px;
+    border-color: #EE423C transparent transparent transparent;
+    transform: rotate(180deg);
+}
+
+
 
 
 .card_treem p {
@@ -524,7 +566,7 @@
     background-color: transparent !important;
     /* Loại bỏ màu nền mặc định của Bootstrap */
     color: #020B27;
-    font-family: Inter sans-serif;
+    font-family: 'Inter' sans-serif;
     font-weight: 600;
     font-style: normal;
     font-size: 15px;
@@ -548,7 +590,7 @@
     margin-bottom: 14px;
     color: #020B27;
     padding-bottom: 14px;
-    font-family: Inter sans-serif;
+    font-family: 'Inter' sans-serif;
     font-weight: 500;
     font-style: normal;
     font-size: 15px;
@@ -598,7 +640,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    cursor: pointer;
+    cursor: po'Inter';
     transition: all 0.2s ease;
     color: #666;
 }
@@ -610,7 +652,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    cursor: pointer;
+    cursor: po'Inter';
     transition: all 0.2s ease;
     border: none;
 }
@@ -659,7 +701,7 @@
     border: none;
     font-weight: 600px;
     font-size: 15px;
-    cursor: pointer;
+    cursor: po'Inter';
     transition: all 0.3s ease;
     box-shadow: 0 4px 6px rgba(60, 161, 251, 0.2);
 }
@@ -727,7 +769,7 @@
     border: none;
     font-weight: 600px;
     font-size: 15px;
-    cursor: pointer;
+    cursor: po'Inter';
     transition: all 0.3s ease;
     box-shadow: 0 4px 6px rgba(60, 161, 251, 0.2);
 }
@@ -741,7 +783,7 @@
 .bangGia p {
     text-align: center;
     margin-top: 16px;
-    font-family: Inter sans-serif;
+    font-family: 'Inter' sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 16px;
@@ -752,7 +794,7 @@
 }
 
 .bangGia h3 {
-    font-family: Inter sans-serif;
+    font-family: 'Inter' sans-serif;
     font-weight: 600;
     font-style: normal;
     font-size: 32px;
@@ -775,13 +817,14 @@
 
 .text_title_quy_trinh {
     margin-top: 70px;
-    font-family: Inter sans-serif;
-    font-weight: 600;
-    font-style: normal;
-    font-size: 32px;
-    line-height: 48px;
+    font-family: 'Inter' sans-serif !important;
+    font-weight: 600 !important;
+    font-style: normal !important;
+    font-size: 32px !important;
+    line-height: 48px !important;
     letter-spacing: 0%;
     text-align: center;
+    color: #000000 !important;
 }
 
 
@@ -790,7 +833,7 @@
 .card_header,
 .card_process,
 .card_process_2 {
-    font-family: Inter sans-serif;
+    font-family: 'Inter' sans-serif;
     font-weight: 600;
     font-style: normal;
     font-size: 20px;
@@ -828,7 +871,7 @@
     border-radius: 12px;
     overflow: hidden;
     /* Để header không bị tràn khỏi bo góc */
-    height: 100%;
+    height: 369px;
     width: 360px;
 }
 
@@ -836,8 +879,50 @@
 .row-item {
     display: flex;
     align-items: flex-start;
-    padding: 20px;
 }
+
+.row-item_1,
+.row-item_3,
+.row-item_4,
+.row-item_5,
+.row-item_6,
+.row-item_7,
+.row-item_8 {
+    display: flex;
+    align-items: flex-start;
+    margin: 20px;
+}
+
+
+.row-item_1 .text,
+.row-item_2 .text,
+.row-item_3 .text,
+.row-item_4 .text,
+.row-item_5 .text,
+.row-item_6 .text,
+.row-item_7 .text,
+.row-item_8 .text {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+
+
+.row-item_5 {
+    padding-bottom: 25px;
+}
+
+.row-item_2 {
+    display: flex;
+    align-items: flex-start;
+    margin: 20px;
+    padding-bottom: 150px;
+}
+
+
+
+
 
 .row-item:last-child {
     margin-bottom: 0;
@@ -876,7 +961,7 @@
 
 /* Phần chữ */
 .text strong {
-    font-family: Inter sans-serif;
+    font-family: 'Inter' sans-serif;
     font-weight: 600;
     font-style: normal;
     font-size: 16px;
@@ -887,7 +972,7 @@
 }
 
 .text p {
-    font-family: Inter sans-serif;
+    font-family: 'Inter' sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 14px;
@@ -902,9 +987,8 @@
     border: 1px solid #e0e0e0;
     border-radius: 8px;
     background: #fff;
-    padding: 16px;
-    max-width: 600px;
     margin-top: 20px;
+    margin-right: 30px;
 }
 
 .anhtoanha {
@@ -917,14 +1001,18 @@
 .center-item {
     display: flex;
     margin-bottom: 16px;
-    margin-right: 4px;
     border-bottom: 1px solid #eee;
     cursor: pointer;
     position: relative;
+    padding-left: 3335px;
 }
 
-.center-item:hover {
+/* .center-item:hover {
     background-color: #f9f9f9;
+} */
+.center-item:hover {
+    background-color: #f0f7ff;
+    /* Màu nền nhẹ khi hover */
 }
 
 /* Ẩn input radio mặc định */
@@ -942,6 +1030,7 @@
     margin-top: 3px;
     position: relative;
     flex-shrink: 0;
+    margin-left: 16px;
 }
 
 /* Dấu chấm xanh khi được chọn */
@@ -995,7 +1084,7 @@
     border: none;
     color: #333;
     font-weight: 500;
-    cursor: pointer;
+    cursor: po'Inter';
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1012,22 +1101,24 @@
     margin-top: 70px;
     letter-spacing: 0%;
     text-align: center;
-    font-family: Inter sans-serif;
+    font-family: 'Inter' sans-serif;
     font-weight: 600;
-    font-style: Semi Bold;
+    font-style: normal;
     font-size: 32px;
     line-height: 48px;
     letter-spacing: 0%;
     text-align: center;
+    color: #000000;
 }
 
 .vidu {
-    font-family: Inter sans-serif;
+    font-family: 'Inter' sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 0%;
+    color: #4B5563;
 }
 
 .anhdiadiem {
@@ -1055,7 +1146,7 @@
 }
 
 .chuoi_text strong {
-    font-family: Inter sans-serif;
+    font-family: 'Inter' sans-serif;
     font-weight: 500;
     font-style: normal;
     font-size: 18px;
@@ -1067,7 +1158,7 @@
 
 .chuoi_text p {
     margin: 0;
-    font-family: Inter sans-serif;
+    font-family: 'Inter' sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 16px;
@@ -1102,38 +1193,64 @@
     color: #3580DB;
 }
 
-.chosee_tinh {
-    width: 270px;
-    height: 48px;
-    opacity: 1;
-    border-width: 1px;
-    border-radius: 6px;
-
+/* Container bao quanh mỗi ô select */
+.select_item {
+    position: relative;
+    /* Làm mốc cho mũi tên canh lề */
+    width: 100%;
+    /* Khoảng cách giữa 2 ô select */
 }
 
+/* Định dạng thẻ select */
+.chosee_tinh,
 .chosee_quan {
-    width: 270px;
+    -webkit-appearance: none;
+    /* Ẩn mũi tên mặc định của Chrome/Safari */
+    -moz-appearance: none;
+    /* Ẩn mũi tên mặc định của Firefox */
+    appearance: none;
+    /* Ẩn mũi tên mặc định chung */
+
     height: 48px;
-    opacity: 1;
-    border-width: 1px;
-    border-radius: 6px;
-    left: 258px;
+    padding-left: 15px;
+    padding-right: 40px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+    cursor: po'Inter';
+}
+
+.icon_arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 12px;
+    poInter-events: none;
+    z-index: 2;
 }
 
 .select_box {
     display: flex;
     gap: 15px;
     margin-right: 30px;
+    margin-bottom: 0 !important;
+}
+
+.count_tinh{
+    margin-top: 16px;
+    margin-bottom: 20px;
 }
 
 .text_tinh {
-    font-family: Inter sans-serif;
-    margin-top: 15px;
-    font-weight: 500;
-    font-style: Medium;
-    font-size: 16px;
-    line-height: 24px;
+    font-family: 'Inter' sans-serif !important;
+    margin-top: 15px !important;
+    font-weight: 500 !important;
+    font-style: Medium !important;
+    font-size: 16px !important;
+    line-height: 24px !important;
     letter-spacing: 0%;
+    color: #020B27;
+    margin-top: 16px !important;
 }
 
 .position-relative {
@@ -1168,7 +1285,7 @@
     color: #000000;
     margin-bottom: 8px;
     margin-top: 50px;
-    font-family: Inter sans-serif;
+    font-family: 'Inter' sans-serif;
     font-weight: 600;
     font-style: normal;
     font-size: 32px;
@@ -1182,7 +1299,7 @@
 .form-subtitle {
     color: #4B5563;
     font-style: normal;
-    font-family: Inter sans-serif;
+    font-family: 'Inter' sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 16px;
@@ -1231,7 +1348,7 @@
 .thongTinNguoiDangKy p,
 .chonTrungTam,
 .thongTinTiemChung {
-    font-family: Inter sans-serif;
+    font-family: 'Inter' sans-serif;
     font-weight: 500;
     font-style: normal;
     font-size: 18px;
@@ -1240,26 +1357,65 @@
     text-align: center;
 
 }
+
+.anhkhiengbaove{
+   width: 24px;
+}
+.anhKhiengtimchung{
+    margin-top: 30px;
+}
+
 
 .thongTinTiemChung {
     margin-top: 30px;
 }
 
-.chonTrungTam img {
-    margin-top: 30px;
+
+
+.chonTrungTam1 {
+    display: flex;
+    flex-direction: row;
+}
+
+.chonTrungTam1 img {
+    width: 24px;
+    height: 24px;
 
 }
 
-.chontrungtamtiemchung {
-    font-family: Inter sans-serif;
+.chonTrungTam1 p {
+    margin-left: 14px;
+    font-family: 'Inter' sans-serif;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: center;
+
+    color: #020B27;
+}
+
+/* .chontrungtamtiemchung {
+    font-family: 'Inter' sans-serif;
     font-weight: 500;
     font-style: normal;
     font-size: 18px;
     line-height: 24px;
     letter-spacing: 0%;
     text-align: center;
-    margin-top: 30px;
+    margin-top: 45px;
+} */
+
+.chontrungtamtiem {
+    padding-bottom: 0%;
 }
+
+
+.thongtintiem {
+    margin-top: 15px;
+}
+
 
 /* Container bọc các ô input */
 .tiem_chung_inputs {
@@ -1328,7 +1484,7 @@
 
 .thongtinvetrungtamtiemchung {
     margin-top: 60px;
-    font-family: Inter sans-serif;
+    font-family: 'Inter' sans-serif;
     font-weight: 600;
     font-style: normal;
     font-size: 32px;
@@ -1352,6 +1508,15 @@
     margin-bottom: 15px;
 }
 
+.ten_namsinh_2{
+     display: flex;
+    /* Kích hoạt Flexbox */
+    width: 100%;
+    /* Ép hàng dãn hết 100% chiều ngang của cột cha */
+    gap: 20px;
+    /* Khoảng cách giữa các ô */
+}
+
 /* Ép tất cả input, select, date bên trong dãn đều */
 .ten_namsinh input {
     flex: 1;
@@ -1368,6 +1533,22 @@
     box-sizing: border-box;
 }
 
+.ten_namsinh_2 input {
+    flex: 1;
+    width: 100%;
+    /* Dòng này cực kỳ quan trọng để ép input bỏ size mặc định */
+    min-width: 0;
+    /* Đảm bảo input không bị tràn khi màn hình nhỏ */
+    height: 45px;
+    padding: 0 15px;
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+    background-color: #fff;
+    outline: none;
+    box-sizing: border-box;
+}
+
+
 
 .col-mt-4 {
     display: flex;
@@ -1377,7 +1558,10 @@
 
 /* Trạng thái mặc định */
 .col-mt-4 button {
-    padding: 10px 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 8px;
+    padding-bottom: 6px;
     border-radius: 8px;
     border: 1px solid #dee2e6;
     background-color: #ffffff;
@@ -1386,6 +1570,11 @@
     font-weight: 500;
     cursor: pointer;
     outline: none;
+    margin-bottom: 0 !important;
+}
+
+.btn-tiem {
+    margin-bottom: 30px !important;
 }
 
 .col-mt-4 button.active {
@@ -1434,7 +1623,7 @@
     background-color: #fff;
     color: #333;
     font-weight: 500;
-    cursor: pointer;
+    cursor: po'Inter';
     transition: all 0.2s;
 }
 
@@ -1451,18 +1640,21 @@
 
 
 
+
+
+
+
+
+
+
+
 .location-selects {
     display: flex;
-    /* Kích hoạt Flexbox */
     gap: 20px;
-    /* Khoảng cách giữa 2 ô Select */
-    margin-bottom: 10px;
-    margin-top: 16px;
 }
 
 .location-selects select {
     flex: 1;
-    /* Mỗi ô chiếm 50% chiều rộng hàng */
     height: 45px;
     padding: 0 15px;
     border: 1px solid #ced4da;
@@ -1475,11 +1667,83 @@
 
 /* Ô select thứ 2 có nền xám nhạt như ảnh */
 .location-selects select:last-child {
-    background-color: #C1C8D1;
+    background-color: #fff;
+
 }
 
+.select_item_2 {
+    position: relative;
+    width: 100%;
+}
+
+/* Định dạng thẻ select */
+.chosee_tinh_bang_gia,
+.chosee_quan_bang_gia {
+    -webkit-appearance: none;
+    /* Ẩn mũi tên mặc định của Chrome/Safari */
+    -moz-appearance: none;
+    /* Ẩn mũi tên mặc định của Firefox */
+    appearance: none;
+    /* Ẩn mũi tên mặc định chung */
+
+    height: 48px;
+    padding-left: 15px;
+    padding-right: 40px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+    cursor: po'Inter';
+}
+
+.icon_arrow {
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    poInter-events: none;
+    z-index: 2;
+}
+
+/* Khi thẻ select bị disabled */
+select:disabled {
+    background-color: #f5f5f5;
+    cursor: not-allowed;
+    /* Hiện vòng tròn đỏ gạch chéo */
+    opacity: 0.7;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .cotamsautrungtam {
-    font-family: Inter sans-serif;
+    font-family: 'Inter' sans-serif;
     font-weight: 500;
     font-style: normal;
     font-size: 16px;
@@ -1526,7 +1790,7 @@
     font-weight: 600;
     /* Bỏ chữ 'px' ở đây vì font-weight dùng số */
     font-size: 15px;
-    cursor: pointer;
+    cursor: po'Inter';
     transition: all 0.3s ease;
     box-shadow: 0 4px 15px rgba(60, 161, 251, 0.3);
     /* Đổ bóng rộng hơn chút cho sang */
@@ -1539,13 +1803,12 @@
     border: 1px solid #e0e0e0;
     border-radius: 12px;
     padding: 10px 20px;
-    margin-top: 15px;
 }
 
 .center-item {
     display: flex;
     align-items: flex-start;
-    padding: 20px 0;
+    padding: 20px 0 0 0;
     border-bottom: 1px solid #f0f0f0;
     cursor: pointer;
     /* position: relative; */
@@ -1566,7 +1829,7 @@
 }
 
 .center-name {
-    font-family: Inter sans-serif;
+    font-family: 'Inter' sans-serif;
     font-weight: 500;
     font-style: normal;
     font-size: 16px;
@@ -1575,7 +1838,7 @@
 }
 
 .center-address {
-    font-family: Inter sans-serif;
+    font-family: 'Inter' sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 14px;
@@ -1592,7 +1855,7 @@
 }
 
 .XEMTHEM {
-    font-family: Inter sans-serif;
+    font-family: 'Inter' sans-serif;
     font-weight: 500;
     font-style: normal;
     font-size: 16px;
@@ -1608,7 +1871,7 @@
 }
 
 .status-time {
-    font-family: Inter sans-serif;
+    font-family: 'Inter' sans-serif;
     font-weight: 400;
     font-style: Regular;
     font-size: 14px;
@@ -1635,7 +1898,33 @@
 .col-md-6 h3 {
     align-content: center;
     margin-top: 60px;
+    color: #000000;
+    font-family: 'Inter' sans-serif;
+    font-style: normal;
+    font-size: 32px;
+    line-height: 48px;
+    letter-spacing: 0%;
+    text-align: center;
+
+
 }
+
+.col-md-6 p {
+
+    color: #4B5563;
+    font-family: 'Inter' sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    /* text-align: center; */
+
+
+}
+
+
+
+
 
 /* 1. Thiết lập chung cho bảng */
 .table-container {
@@ -1670,7 +1959,7 @@
     text-align: center;
     text-transform: none;
     height: 50px;
-    font-family: Inter sans-serif;
+    font-family: 'Inter' sans-serif;
     font-style: normal;
     font-size: 16px;
     line-height: 24px;
@@ -1688,7 +1977,7 @@
     text-align: center;
     vertical-align: middle;
     /* Căn giữa nội dung khi gộp hàng (rowspan) */
-    font-family: Inter sans-serif;
+    font-family: 'Inter' sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 16px;
@@ -1741,10 +2030,23 @@
 .news-meta {
     display: flex;
     align-items: center;
-    margin-bottom: 16px;
+    margin-bottom: 20px;
     /* Khoảng cách với tiêu đề */
     margin-top: 20px;
+    gap: 8px;
 }
+
+.baivietmau {
+    text-decoration: none;
+    color: #020B27;
+    font-size: 20px;
+}
+
+.baivietmau:hover {
+    cursor: pointer;
+    color: #007bff;
+}
+
 
 .calendar-icon {
     margin-right: 10px;
@@ -1772,7 +2074,7 @@
 }
 
 .news-titl_1 {
-    font-family: Inter sans-serif;
+    font-family: 'Inter' sans-serif;
     font-weight: 600;
     font-style: normal;
     font-size: 20px;
@@ -1783,14 +2085,11 @@
 
 .news-excerpt {
     font-size: 15px;
-    color: #495057;
-    /* Màu xám đậm của chữ mô tả */
+    color: #374151;
     line-height: 1.6;
     margin-top: 0;
     margin-bottom: 24px;
-    /* Khoảng cách với nút bấm */
-
-    font-family: Inter sans-serif;
+    font-family: 'Inter' sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 15px;
@@ -1810,7 +2109,7 @@
     /* Bo tròn pill */
     font-size: 16px;
     font-weight: 600;
-    cursor: pointer;
+    cursor: po'Inter';
 }
 
 /* --- Container chính của danh sách tin phụ --- */
@@ -1850,9 +2149,8 @@
 /* --- Phần nội dung văn bản --- */
 .side-content {
     flex: 1;
-    /* Chiếm nốt khoảng trống còn lại bên phải */
-    min-width: 0;
-    /* Ngăn text dài làm vỡ bố cục */
+    margin-bottom: 50px;
+    width: 337px;
 }
 
 /* Phần Tiêu đề */
@@ -2122,11 +2420,11 @@
     color: #FFFFFF;
     background-color: #FF5555;
     border: none;
-    cursor: pointer;
+    cursor: po'Inter';
 }
 
 .ms-3 {
-    font-family: Inter sans-serif;
+    font-family: 'Inter' sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 14px;
@@ -2210,7 +2508,7 @@
     height: 21px;
     background: transparent;
     border: none;
-    cursor: pointer;
+    cursor: po'Inter';
     padding: 0;
 }
 
@@ -2303,7 +2601,14 @@
         display: flex;
         justify-content: center;
         /* Căn giữa nội dung bên trong cột */
-        width: 100%;
+    }
+
+
+    .image_intro .col-3 {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        justify-content: center;
+        align-items: center;
     }
 
     .image_intro {
@@ -2311,15 +2616,13 @@
         justify-content: center;
         /* Căn giữa nội dung bên trong cột */
         width: 100%;
-        gap: 20px;
+        gap: 30px;
+        padding-right: 0%;
     }
 
     .quyTrinhTomTat {
         display: flex;
-        justify-content: center;
-        /* Căn giữa nội dung bên trong cột */
-        width: 100%;
-        gap: 20px;
+        gap: 30px;
     }
 
     .location-selects {
@@ -2329,6 +2632,7 @@
         gap: 15px;
         /* Khoảng cách giữa 2 ô select */
         width: 100%;
+        
     }
 
     .location-selects select {
@@ -2740,6 +3044,9 @@
         /* Đảm bảo không có gì tràn ra ngoài */
     }
 
+
+
+
     /* Thẻ p chứa nội dung */
     .card_1 p,
     .card_2 p,
@@ -2748,7 +3055,7 @@
     .card_5 p,
     .card_6 p,
     .card_7 p {
-        font-family: Inter sans-serif;
+        font-family: 'Inter' sans-serif;
         font-weight: 400;
         font-style: normal;
         font-size: 18px;
