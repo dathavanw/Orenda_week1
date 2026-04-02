@@ -987,8 +987,6 @@
     border: 1px solid #e0e0e0;
     border-radius: 8px;
     background: #fff;
-    margin-top: 20px;
-    margin-right: 30px;
 }
 
 .anhtoanha {
@@ -1000,7 +998,6 @@
 /* Từng dòng trung tâm */
 .center-item {
     display: flex;
-    margin-bottom: 16px;
     border-bottom: 1px solid #eee;
     cursor: pointer;
     position: relative;
@@ -1095,6 +1092,7 @@
 .anhForm {
     display: flex;
     margin-top: 70px;
+    height: 1540px;
 }
 
 .diadiem {
@@ -1232,7 +1230,6 @@
 .select_box {
     display: flex;
     gap: 15px;
-    margin-right: 30px;
     margin-bottom: 0 !important;
 }
 
@@ -1255,7 +1252,6 @@
 
 .position-relative {
     position: relative;
-    height: 1798px;
 }
 
 .form-abs-overlay {
@@ -1754,6 +1750,7 @@ select:disabled {
 }
 
 
+
 .btn-chiDuong {
     display: flex;
     align-items: center;
@@ -1802,7 +1799,6 @@ select:disabled {
     background-color: #fff;
     border: 1px solid #e0e0e0;
     border-radius: 12px;
-    padding: 10px 20px;
 }
 
 .center-item {
@@ -1825,8 +1821,19 @@ select:disabled {
     justify-content: center;
     margin-left: 15px;
     height: 92px;
-    margin-right: 20px;
 }
+
+
+
+.chiduong {
+    margin-right: 30px;
+    margin-top: 20px;
+}
+
+
+
+
+
 
 .center-name {
     font-family: 'Inter' sans-serif;
@@ -2064,14 +2071,19 @@ select:disabled {
 /* Phần Tiêu đề */
 .news-title {
     font-size: 16px;
-    /* Kích thước tiêu đề */
     font-weight: bold;
     color: #002d5d;
-    /* Màu xanh đậm đặc trưng */
     line-height: 24px;
     /* Khoảng cách dòng */
     margin-top: 0;
+  text-decoration: none;
+    cursor: pointer;
 }
+
+.news-title:hover {
+    color: #316EC9 !important;
+}
+
 
 .news-titl_1 {
     font-family: 'Inter' sans-serif;
@@ -2520,12 +2532,12 @@ select:disabled {
     border-radius: 10px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 430px) {
     .horizontal-gallery {
         flex-wrap: wrap;
         justify-content: center;
         /* Căn giữa các icon nếu hàng cuối bị lẻ */
-        gap: 20px;
+        gap: 0px;
         /* Tạo khoảng cách giữa các hàng và các cột */
     }
 
@@ -2537,6 +2549,89 @@ select:disabled {
         min-width: 100px;
         /* Đảm bảo icon không bị bóp quá nhỏ */
     }
+
+
+
+
+  .vector1 {
+        margin-top: 20px;
+    }
+
+    .text_1 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .text_2 {
+        font-size: 14px;
+text-align: justify;    }
+
+    .image_intro{
+        display: flex;
+         gap: 60px; 
+    }
+
+
+
+
+    
+  .text_3 {
+        font-size: 16px;
+    }
+
+.intro h2{
+    font-size: 28px;
+}
+.intro p{
+text-align: justify;
+    /* Thêm các thuộc tính dưới đây để đoạn văn đẹp hơn */
+    line-height: 1.8;      /* Khoảng cách giữa các dòng thoáng hơn */
+    text-justify: inter-word; /* Giúp khoảng cách giữa các từ đều hơn */
+margin-left: 25px;
+margin-right: 25px;
+
+}
+
+.card_1{
+        background: #E5F3FE;
+
+}
+
+.card_1 p{
+        color: #2A50AA;
+
+}
+
+
+
+.col-md-6 p{
+    font-size: 15px;
+}
+
+.bangGia{
+  margin-top: 0%;
+
+}
+.col-md-6 h3{
+margin-top: 0%;
+}
+
+.text_title_quy_trinh{
+    font-size: 25px !important;
+    margin-top: 25px;
+}
+
+
+.col-md-12 p{
+    
+}
+
+
+
+
+
+
+
 
 
     .caption {
@@ -2664,7 +2759,6 @@ select:disabled {
         width: 100%;
         /* Đẩy nút xuống dưới cùng và chiếm 100% để dễ bấm */
         justify-content: center;
-        margin-top: 16px;
         padding: 10px;
         background-color: #E5F3FE;
         color: #3580DB;
